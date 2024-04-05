@@ -10,13 +10,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        PersonBuilder builder1 = new PersonBuilder();
-        builder1.setFirstName("Giovanni");
-        builder1.setLastName("Giorgio");
+        PersonBuilder builder1 = new PersonBuilder("Giovanni", "Giorgio").setAge(28);
         Person person1 = builder1.build();
-        PersonBuilder builder2 = new PersonBuilder();
-        builder2.setFirstName("Gino");
-        builder2.setLastName("De Ginis");
+        PersonBuilder builder2 = new PersonBuilder("Gino", "De Ginis").setAddress("Via del Corso");
         Person person2 = builder2.build();
         System.out.println(person1);
         System.out.println(person2);

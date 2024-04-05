@@ -4,11 +4,11 @@ public class Person {
     private int age;
     private String address;
 
-    public Person (String firstName, String lastName, int age, String address) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.address = address;
+    public Person (PersonBuilder personBuilder) {
+        this.firstName = personBuilder.getFirstName();
+        this.lastName = personBuilder.getLastName();
+        this.age = personBuilder.getAge();
+        this.address = personBuilder.getAddress();
     };
 
     public String getFirstName() {
